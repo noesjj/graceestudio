@@ -19,7 +19,7 @@
                 <a href="#studios" class="nav-link">Studios</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <a href="https://graceephoto.com/" target="_blank" class="nav-link nav-link-special">Photography</a>
+                <a href="https://graceephoto.com/" target="_blank" class="nav-link nav-link-special">Grace E. Photography</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span>
@@ -48,15 +48,33 @@
                 <p class="section-subtitle">Two unique spaces designed for your creative vision</p>
             </div>
 
+            <hr class="decorative-line">
+
             <!-- The Storefront -->
             <div class="studio-card">
-                <div class="studio-image">
-                    <div class="studio-image-placeholder storefront">
-                        <span>The Storefront</span>
-                    </div>
-                </div>
                 <div class="studio-info">
                     <h3 class="studio-name">The Storefront</h3>
+                    <div class="carousel" id="storefrontCarousel">
+                        <div class="carousel-container">
+                            <div class="carousel-slide">
+                                <img src="images/IMG_1888.jpg" alt="The Storefront - Dark moody space">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/IMG_1888.jpg" alt="The Storefront - Dark moody space">
+                            </div>
+                        </div>
+                        
+                        <!-- Navigation Buttons -->
+                        <button class="carousel-button carousel-button-prev" onclick="moveCarousel('storefrontCarousel', -1)">‹</button>
+                        <button class="carousel-button carousel-button-next" onclick="moveCarousel('storefrontCarousel', 1)">›</button>
+                        
+                        <!-- Indicators -->
+                        <div class="carousel-indicators">
+                            <button class="carousel-indicator active" onclick="goToSlide('storefrontCarousel', 0)"></button>
+                            <button class="carousel-indicator active" onclick="goToSlide('storefrontCarousel', 1)"></button>
+                        </div>
+                    </div>
+                    <br>
                     <p class="studio-description">
                         A dramatic, moody space featuring rich black walls, vintage leather furnishings, 
                         and eclectic decor. Perfect for editorial sessions, dramatic portraits, and 
@@ -72,16 +90,46 @@
                 </div>
             </div>
 
+            <hr class="decorative-line">
+
             <div class="studios-grid">
                 <!-- The Joyce Loft -->
                 <div class="studio-card">
-                    <div class="studio-image">
-                        <div class="studio-image-placeholder joyce-loft">
-                            <span>The Joyce Loft</span>
-                        </div>
-                    </div>
                     <div class="studio-info">
                         <h3 class="studio-name">The Joyce Loft</h3>
+                        <div class="carousel" id="joyceLoftCarousel">
+                            <div class="carousel-container">
+                                <div class="carousel-slide">
+                                    <img src="images/IMG_2322.jpg" alt="The Joyce Loft - Dark Wall">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/IMG_2298.jpg" alt="The Joyce Loft - Bathroom detail">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/IMG_2305.jpg" alt="The Joyce Loft - Kitchen area">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/IMG_2307.jpg" alt="The Joyce Loft - Natural light">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/IMG_2306.jpg" alt="The Joyce Loft - Colorful bench">
+                                </div>
+                            </div>
+                            
+                            <!-- Navigation Buttons -->
+                            <button class="carousel-button carousel-button-prev" onclick="moveCarousel('joyceLoftCarousel', -1)">‹</button>
+                            <button class="carousel-button carousel-button-next" onclick="moveCarousel('joyceLoftCarousel', 1)">›</button>
+                            
+                            <!-- Indicators -->
+                            <div class="carousel-indicators">
+                                <button class="carousel-indicator active" onclick="goToSlide('joyceLoftCarousel', 0)"></button>
+                                <button class="carousel-indicator" onclick="goToSlide('joyceLoftCarousel', 1)"></button>
+                                <button class="carousel-indicator" onclick="goToSlide('joyceLoftCarousel', 2)"></button>
+                                <button class="carousel-indicator" onclick="goToSlide('joyceLoftCarousel', 3)"></button>
+                                <button class="carousel-indicator" onclick="goToSlide('joyceLoftCarousel', 4)"></button>
+                            </div>
+                        </div>
+                        <br>
                         <p class="studio-description">
                             A bright, botanical-inspired space with natural light, white walls, and organic 
                             elements. Ideal for lifestyle sessions, beauty photography, family portraits, 
@@ -99,6 +147,8 @@
             </div>
         </div>
     </section>
+
+    <hr class="decorative-line">
 
     <!-- Gallery Section -->
     <section class="gallery">
