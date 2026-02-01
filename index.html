@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace E. Studio - Photography Studio Rental in Hamilton, Ohio</title>
+    <meta name="description" content="Rent professional photography studios in Hamilton, Ohio. The Joyce Loft and The Storefront available for all your creative sessions.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Grace E. Studio</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#studios" class="nav-link">Studios</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="https://graceephoto.com/" target="_blank" class="nav-link nav-link-special">Photography</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-title-main">Grace E. Studio</span>
+                <span class="hero-title-sub">Professional Photography Studios for Rent</span>
+            </h1>
+            <p class="hero-description">Located in the heart of Hamilton, Ohio</p>
+            <a href="#studios" class="btn btn-primary">Explore Our Spaces</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Studios Section -->
+    <section class="studios" id="studios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Studios</h2>
+                <p class="section-subtitle">Two unique spaces designed for your creative vision</p>
+            </div>
+
+            <div class="studios-grid">
+                <!-- The Joyce Loft -->
+                <div class="studio-card">
+                    <div class="studio-image">
+                        <div class="studio-image-placeholder joyce-loft">
+                            <span>The Joyce Loft</span>
+                        </div>
+                    </div>
+                    <div class="studio-info">
+                        <h3 class="studio-name">The Joyce Loft</h3>
+                        <p class="studio-description">
+                            A dramatic, moody space featuring rich black walls, vintage leather furnishings, 
+                            and eclectic decor. Perfect for editorial sessions, dramatic portraits, and 
+                            creative projects that demand bold, striking imagery.
+                        </p>
+                        <ul class="studio-features">
+                            <li>Dramatic black walls & vintage ambiance</li>
+                            <li>Leather furniture & curated decor</li>
+                            <li>Multiple shooting vignettes</li>
+                            <li>Professional lighting equipment</li>
+                        </ul>
+                        <button class="btn btn-secondary studio-book-btn" data-studio="joyce-loft">Book This Studio</button>
+                    </div>
+                </div>
+
+                <!-- The Storefront -->
+                <div class="studio-card">
+                    <div class="studio-image">
+                        <div class="studio-image-placeholder storefront">
+                            <span>The Storefront</span>
+                        </div>
+                    </div>
+                    <div class="studio-info">
+                        <h3 class="studio-name">The Storefront</h3>
+                        <p class="studio-description">
+                            A bright, botanical-inspired space with natural light, white walls, and organic 
+                            elements. Ideal for lifestyle sessions, beauty photography, family portraits, 
+                            and any project seeking a fresh, airy aesthetic with kitchen and bath setups.
+                        </p>
+                        <ul class="studio-features">
+                            <li>Abundant natural light</li>
+                            <li>White walls & botanical styling</li>
+                            <li>Kitchen & bathroom settings</li>
+                            <li>Multiple shooting areas</li>
+                        </ul>
+                        <button class="btn btn-secondary studio-book-btn" data-studio="storefront">Book This Studio</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Studio Gallery</h2>
+                <p class="section-subtitle">Explore our versatile spaces and distinctive aesthetics</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-large">
+                    <img src="images/IMG_2322.jpg" alt="Studio interior with vintage chaise lounge" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_2297.jpg" alt="Bright bathroom with botanical styling" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_2298.jpg" alt="White bathroom with natural light" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_2305.jpg" alt="Kitchen area with granite countertops" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_2306.jpg" alt="Colorful seating area with vintage decor" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_2307.jpg" alt="Natural light streaming through studio windows" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Grace E. Studio</h2>
+                    <p>
+                        Grace E. Studio provides professional photography spaces for rent in Hamilton, Ohio. 
+                        Whether you're a seasoned photographer or just starting out, our studios offer the 
+                        perfect environment for your creative sessions.
+                    </p>
+                    <p>
+                        Both The Joyce Loft and The Storefront are thoughtfully designed to accommodate a 
+                        variety of photography needs—from intimate portrait sessions to larger commercial 
+                        projects. We provide the space and equipment; you bring the vision.
+                    </p>
+                    <div class="about-cta">
+                        <a href="https://graceephoto.com/" target="_blank" class="btn btn-outline">
+                            View Our Photography Work
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-placeholder">
+                        <span>Studio Space</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="contact-description">
+                        Ready to book a studio? Have questions about our spaces? 
+                        We'd love to hear from you.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h3>Location</h3>
+                            <p>567 Main Street<br>Hamilton, Ohio</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Hours</h3>
+                            <p>By Appointment Only</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Connect</h3>
+                            <p>
+                                <a href="https://graceephoto.com/" target="_blank" class="contact-link">
+                                    Grace E. Photography
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="studio">Studio Interest</label>
+                            <select id="studio" name="studio">
+                                <option value="">Select a studio</option>
+                                <option value="joyce-loft">The Joyce Loft</option>
+                                <option value="storefront">The Storefront</option>
+                                <option value="either">Either Studio</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Grace E. Studio</h3>
+                    <p>Professional Photography Studios in Hamilton, Ohio</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#studios">Studios</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://graceephoto.com/" target="_blank">Photography</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Grace E. Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal (placeholder for Acuity Scheduling integration) -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2>Book <span id="modalStudioName"></span></h2>
+            <p class="modal-description">
+                Acuity Scheduling integration will be added here. 
+                You can embed your Acuity Scheduling widget in this modal.
+            </p>
+            <div id="acuityScheduling">
+                <!-- Acuity Scheduling embed will go here -->
+                <p style="text-align: center; padding: 40px 20px; color: #888;">
+                    Your Acuity Scheduling booking widget will appear here.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
