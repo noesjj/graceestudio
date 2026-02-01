@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmed - Grace E. Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom, #f5f3f0 0%, #e8e2da 50%, #f0ebe5 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .thank-you-container {
+            max-width: 600px;
+            background: white;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            animation: slideUp 0.6s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .checkmark {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #7a9b76;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            animation: scaleIn 0.5s ease-out 0.3s both;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .checkmark svg {
+            width: 40px;
+            height: 40px;
+            stroke: white;
+            stroke-width: 3;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-dasharray: 50;
+            stroke-dashoffset: 50;
+            animation: drawCheck 0.5s ease-out 0.5s forwards;
+        }
+
+        @keyframes drawCheck {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #6b6b6b;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .info-box {
+            background: #f5f3f0;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 4px solid #c9653d;
+        }
+
+        .info-box h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+        }
+
+        .info-box p {
+            color: #6b6b6b;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #c9653d;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #1a1a1a;
+            border: 2px solid #1a1a1a;
+        }
+
+        .btn-secondary:hover {
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        .social-links {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .social-links p {
+            color: #6b6b6b;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .social-links a {
+            color: #c9653d;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .social-links a:hover {
+            color: #1a1a1a;
+        }
+
+        @media (max-width: 600px) {
+            .thank-you-container {
+                padding: 40px 30px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <div class="checkmark">
+            <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+            </svg>
+        </div>
+
+        <h1>Booking Confirmed!</h1>
+        <p class="subtitle">
+            Thank you for booking with Grace E. Studio. We're excited to host your creative session!
+        </p>
+
+        <div class="info-box">
+            <h3>What's Next?</h3>
+            <p><strong>✓</strong> Check your email for booking confirmation and studio access details</p>
+            <p><strong>✓</strong> You'll receive a reminder 24 hours before your session</p>
+            <p><strong>✓</strong> Need to reschedule? Use the link in your confirmation email</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Studio Location</h3>
+            <p>567 Main Street<br>Hamilton, Ohio</p>
+            <p style="margin-top: 15px;">
+                <strong>Questions?</strong> Contact us through our website or reply to your confirmation email.
+            </p>
+        </div>
+
+        <div class="buttons">
+            <a href="/" class="btn btn-primary">Back to Home</a>
+            <a href="https://graceephoto.com/" target="_blank" class="btn btn-secondary">View Our Work</a>
+        </div>
+
+        <div class="social-links">
+            <p>Follow us for studio updates and inspiration</p>
+            <p>
+                <a href="https://graceephoto.com/" target="_blank">Grace E. Photography →</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Optional: Track booking confirmation
+        console.log('Booking confirmed - thank you page loaded');
+        
+        // You can add analytics tracking here if needed
+        // Example: gtag('event', 'booking_confirmed', { 'studio': 'grace_e_studio' });
+    </script>
+</body>
+</html>

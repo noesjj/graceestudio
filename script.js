@@ -60,63 +60,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Booking Modal
-const modal = document.getElementById('bookingModal');
-const modalClose = document.getElementById('modalClose');
-const modalStudioName = document.getElementById('modalStudioName');
-const bookButtons = document.querySelectorAll('.studio-book-btn');
-
-bookButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const studioName = button.getAttribute('data-studio');
-        const displayName = studioName === 'joyce-loft' ? 'The Joyce Loft' : 'The Storefront';
-        modalStudioName.textContent = displayName;
-        modal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    });
-});
-
-modalClose.addEventListener('click', closeModal);
-
-modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-        closeModal();
-    }
-});
-
-function closeModal() {
-    modal.classList.remove('active');
-    document.body.style.overflow = 'auto';
-}
-
-// Close modal on escape key
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
-        closeModal();
-    }
-});
-
-// Contact Form Handling
-const contactForm = document.getElementById('contactForm');
-
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-    
-    // Here you would typically send the data to a server
-    // For now, we'll just log it and show a success message
-    console.log('Form submitted:', data);
-    
-    // Show success message
-    alert('Thank you for your message! We will get back to you soon.');
-    
-    // Reset form
-    contactForm.reset();
-});
-
 // Intersection Observer for scroll animations
 const observerOptions = {
     threshold: 0.1,

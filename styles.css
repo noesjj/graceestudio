@@ -363,11 +363,11 @@ body {
 }
 
 .joyce-loft {
-    background-image: url('images/IMG_1888.jpg');
+    background-image: url('images/IMG_2297.jpg');
 }
 
 .storefront {
-    background-image: url('images/IMG_2297.jpg');
+    background-image: url('images/IMG_1888.jpg');
 }
 
 .studio-card:hover .studio-image-placeholder {
@@ -661,63 +661,6 @@ body {
 .footer-bottom p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.9rem;
-}
-
-/* Modal */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 2000;
-    align-items: center;
-    justify-content: center;
-    animation: fadeIn 0.3s ease-out;
-}
-
-.modal.active {
-    display: flex;
-}
-
-.modal-content {
-    background-color: var(--color-white);
-    padding: 60px;
-    max-width: 800px;
-    width: 90%;
-    max-height: 90vh;
-    overflow-y: auto;
-    position: relative;
-    animation: slideUp 0.4s ease-out;
-}
-
-.modal-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: var(--color-gray);
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.modal-close:hover {
-    color: var(--color-primary);
-}
-
-.modal-content h2 {
-    font-family: var(--font-display);
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.modal-description {
-    color: var(--color-gray);
-    margin-bottom: 30px;
 }
 
 /* Animations */
